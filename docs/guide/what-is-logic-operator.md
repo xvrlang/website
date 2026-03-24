@@ -1,14 +1,10 @@
----
-sidebar_position: 4
-id: What is logic operator ?
-slug: /what-is-logic-operator
----
+# Chapter 4
 
-# What is logic operator ?
+## What is logic operator ?
 
 logical operator are describing that operator can be return `true` or `false` from two boolean values.
 
-```xvr
+```
 var first_value: bool = true;
 var second_value: bool = false;
 
@@ -26,8 +22,7 @@ print(!second_value);
 ## What is compare operators
 
 compare operator are describing that operator can be return `true` or `false` from two value by compare.
-
-```xvr
+```
 var this_number: int = 30;
 var other_number: int = 20;
 
@@ -38,6 +33,3 @@ print(this_number <= other_number);
 print(this_number >= other_number);
 print(this_number != other_number);
 ```
-
-> [!NOTE]
-> print will support with or without parentheses (round bracket).

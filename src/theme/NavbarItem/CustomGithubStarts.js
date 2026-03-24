@@ -3,7 +3,7 @@ import clsx from "clsx";
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import Link from "@docusaurus/Link";
 
-const DEFAULT_REPO = "slowy07/xvr";
+const DEFAULT_REPO = "xvrlang/xvr";
 const GITHUB_API_BASE = "https://api.github.com/repos/";
 
 function formatStars(count) {

@@ -19,7 +19,7 @@ function headerNav(): object[] {
       position: "right",
     },
     {
-      href: "https://github.com/slowy07/xvr",
+      href: "https://github.com/xvrlang/xvr",
       label: "GitHub",
       position: "right",
     },
@@ -42,16 +42,16 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  // url: "https://warga-slowy.github.io/xvr",
-  url: "https://WargaSlowy.github.io",
+  // url: "https://xvrlang.github.io/website",
+  url: "https://xvrlang.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/xvrlang-website/",
+  baseUrl: "/website/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "WargaSlowy", // Usually your GitHub org/user name.
-  projectName: "xvrlang-website", // Usually your repo name.
+  organizationName: "xvrlang", // Usually your GitHub org/user name.
+  projectName: "website", // Usually your repo name.
 
   onBrokenLinks: "throw",
 
@@ -73,7 +73,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/WargaSlowy/xvr/tree/main/docs",
+          editUrl: "https://github.com/xvrlang/xvr/tree/main/docs",
         },
         blog: {
           showReadingTime: true,
@@ -83,7 +83,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/WargaSlowy/xvr/tree/main/blog/",
+          editUrl: "https://github.com/xvrlang/xvr/tree/main/blog/",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -105,7 +105,7 @@ const config: Config = {
     announcementBar: {
       id: "announcement-1",
       content:
-        '🌟 If you like Xvr, don\'t forget to give us a star on <a href="https://github.com/slowy07/xvr">Github</a> 🌟',
+        '🌟 If you like Xvr, don\'t forget to give us a star on <a href="https://github.com/xvrlang/xvr">Github</a> 🌟',
       backgroundColor: "#fafbfc",
       textColor: "#091E42",
       isCloseable: true,
@@ -148,7 +148,7 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/slowy07/xvr",
+              href: "https://github.com/xvrlang/xvr",
             },
           ],
         },

@@ -1,39 +1,39 @@
-import React from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import Heading from "@theme/Heading";
-import styles from "./styles.module.css";
-import Logo from "../Logo";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import styles from './styles.module.css';
+import Heading from "@theme/Heading";
+import React from "react";
+import Link from "@docusaurus/Link";
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+function HomePageHeader() {
+  const {siteConfig} = useDocusaurusContext();
+  
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title.split(" ").map((word, idx) =>
-            word === "Xvr" ? (
-              <span key={idx} className={styles.spanXvr} id="oke">
+    <header className={styles.heroMinimal}>
+      <div className="container text--center">
+        <Heading as="h1" className={styles.title}>
+          {siteConfig.title.split(" ").map((word, index) => 
+            word.toLowerCase() === "xvr" ? (
+              <span key={index} className={styles.xvr}>
                 {word}{" "}
               </span>
             ) : (
               word + " "
-            ),
+            )
           )}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        
+        <p className={styles.subtitle}>
+          {siteConfig.tagline}
+        </p>
+
         <div className={styles.buttons}>
-          <Link
-            className={`button button--secondary button--lg ${styles.customButton}`}
-            to="/docs/introduction"
-          >
+          <Link className="button button--primary button--lg" to="/docs/introduction">
             Get Started
           </Link>
         </div>
       </div>
     </header>
-  );
+  )
 }
 
-export default HomepageHeader;
+export default HomePageHeader;
